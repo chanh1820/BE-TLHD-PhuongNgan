@@ -34,6 +34,9 @@ public class PostMapper implements BaseMapper<PostEntity, PostDTO> {
         if (dto.getUserId() != null) {
             postEntity.setUserId(dto.getUserId());
         }
+        if (dto.getListFile() != null) {
+            postEntity.setListFile(dto.getListFile());
+        }
         if (dto.getAuthor() != null) {
             postEntity.setAuthor(dto.getAuthor());
         }
@@ -67,6 +70,9 @@ public class PostMapper implements BaseMapper<PostEntity, PostDTO> {
         }
         if (postEntity.getAuthor() != null) {
             postDTO.setAuthor(postEntity.getAuthor());
+        }
+        if (postEntity.getListFile() != null) {
+            postDTO.setListFile(postEntity.getListFile());
         }
         if (postEntity.getCreateDate() != null) {
             postDTO.setCreateDate(postEntity.getCreateDate());
