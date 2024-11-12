@@ -37,6 +37,9 @@ public class PostEntity {
     @Column(name = "author")
     private String author;
 
+    @Column(name = "list_file")
+    private String listFile;
+
     @CreationTimestamp
     @JsonSerialize(using = LocalDateTimeSerializer.class)
     @JsonDeserialize(using = LocalDateTimeDeserializer.class)
