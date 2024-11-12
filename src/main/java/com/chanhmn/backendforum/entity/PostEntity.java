@@ -36,6 +36,8 @@ public class PostEntity {
 
     @Column(name = "author")
     private String author;
+    @Column(name = "list_file")
+    private String listFile;
 
     @Column(name = "list_file")
     private String listFile;
